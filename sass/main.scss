@@ -1,9 +1,11 @@
 //Customize pre define variables
 
-
 // import funcion & variable for new custom variables
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+$trans:rgba(0, 0, 0, 0);
+$thumbnail-bg:$trans;
+$thumbnail-border-color:$trans;
 
 $custom-theme-colors: (
   "altdark":#271C19,
@@ -13,7 +15,7 @@ $custom-theme-colors: (
   "lightblue":#00EDB4,
   "lightgreen":#00ED42,
   "orange":#FF8906,
-  "transparent":rgba(0, 0, 0, 0)
+  "transparent":$trans
   );
 // merge the maps of the themes
 
