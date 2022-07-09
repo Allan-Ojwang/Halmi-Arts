@@ -1,7 +1,6 @@
 {
   "name": "halmi-arts",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allan-Ojwang/Halmi-Arts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Allan-Ojwang/Halmi-Arts/issues"
+  },
+  "homepage": "https://github.com/Allan-Ojwang/Halmi-Arts#readme",
+  "description": ""
 }
