@@ -1,19 +1,53 @@
 <!--   TABLE OF CONTENT 
-    0.1 Bootstrap Css Assets  
 
-      1. Navigation Bar
-        1.1 Navigation Links
-      2. Hero Section
-      3. About Section
-      4. Offer Section
-      5. Recent Work
+    0.1 Bootstrap, Icons & Css Assets  
+
+      1. NAVIGATION BAR
+        1.1 Navigation Header & Menu
+        1.2 Navigation Links
+
+      2. HERO SECTION
+
+      3. ABOUT SECTION
+
+      4. OFFER SECTION
+        4.1 Offer Cards
+          4.1.1 Photography Card
+          4.1.2 Videography Card
+          4.1.3 Sound Card
+          4.1.4 Web Design Card
+
+      5. RECENT WORK SECTION
         5.1 Photography Projects
-        5.2 Contact
+          5.1.1 Photography Project Nav tabs
+          5.1.2 Photography Tabs Panes
+            5.1.2.1 Family Tab
+              5.1.2.1.1 Family Carousel
+            5.1.2.2 Couple Tab
+              5.1.2.2.1 Couple Carousel
+            5.1.2.3 Portrait Tab
+              5.1.2.3.1 Portrait Carousel
+            5.1.2.4 Automobile Tab
+              5.1.2.4.1 Automobile Carousel
+
+        5.2 Contact Section
+
         5.3 Videography Projects
-      6. Footer Section
+          5.3.1 Videography Project Nav tabs
+          5.3.2 Videography Tabs Panes
+
+      6. FOOTER SECTION
+        6.1 Halmi Outro
+        6.2 Quick Links
+        6.3 Contact
+        6.4 Newsletter
+        6.5 Copyright
+
 
     0.2. Bootstrap Java Assets
--->
+
+  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,17 +55,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halmi Arts</title>
-  <!-- 0.1 Bootstrap Css Assets -->
+  <!-- 0.1 Bootstrap, Icons &  Css Assets -->
   <link href="/css/main.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link href="/assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
   
-  <!-- 1. Navigation bar -->
+  <!-- 1. NAVIGATION BAR -->
   <header>
     <nav class="bg-transparent navbar fixed-top navbar-expand-xxxl  navbar-dark py-4">
       <div class="container">
+
+        <!-- 1.1 Navigation Header & Menu -->
         <a href="#" class="navbar-brand">
           <span class="fw-bold text-secondary">HALMI ARTS</span>
         </a>
@@ -41,7 +78,7 @@
         <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- 1.1 Navigation links -->
+        <!-- 1.2 Navigation links -->
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="bg-dark navbar-nav text-center my-2">
             <li class="nav-item">
@@ -63,7 +100,7 @@
     </nav>
   </header>
 
-  <!-- 2. Hero Section -->
+  <!-- 2. HERO SECTION -->
   <!-- style="background-image:url(./assets/index-image/robi.png); height: 400px;" -->
   <section  class="bg-dark hero-section text-light p-5 text-center">
     <div class="container">
@@ -73,7 +110,7 @@
     </div>
   </section>
 
-  <!-- 3. About Section -->
+  <!-- 3. ABOUT SECTION -->
   <section  class="bg-altdark text-light p-5 text-center">
     <div class="container">
       <h2 class="text-lightblue my-2">HELLO THERE</h2>
@@ -98,13 +135,16 @@
     </div>
   </section>
 
-  <!-- 4. Offer Section -->
+  <!-- 4. OFFER SECTION -->
   <section  class="bg-altlight text-light p-5 text-center">
     <div class="container">
       <h2 class=" text-lightblue my-2">WHAT WE OFFER</h2>
       <h1 class="display-1 text-yellow ">We’ve got everything you need to launch and grow your creativity.</h1>
       
+      <!-- 4.1 Offer Cards -->
       <div class="row my-5 align-items-center justify-content-center">
+
+        <!-- 4.1.1 Photography Card -->
         <div class="col-xxl-3 col-lg-8 m-4">
           <div class="card">
             <div class="bg-cardbg card border-0">
@@ -117,6 +157,7 @@
           </div>    
         </div>
 
+        <!-- 4.1.2 Videography Card -->
         <div class="col-xxl-3 col-lg-8 m-4">
           <div class="card">
             <div class="bg-cardbg card border-0">
@@ -128,7 +169,8 @@
             </div>
           </div>    
         </div>
-
+      
+        <!-- 4.1.3 Sound Card -->
         <div class="col-xxl-3 col-lg-8 m-4">
           <div class="card">
             <div class="bg-cardbg card border-0">
@@ -141,6 +183,7 @@
           </div>    
         </div>
 
+        <!-- 4.1.4 Web Design Card -->
         <div class="col-xxl-3 col-lg-8 m-4">
           <div class="card">
             <div class="bg-cardbg card border-0">
@@ -152,19 +195,20 @@
             </div>
           </div>    
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- 5. Recent Work Section -->
-  <!-- 5.1 Photograpgy Section -->
+  <!-- 5. RECENT WORK SECTION -->
+  <!-- 5.1 Photograpgy Projects -->
   <section  class="bg-altdark text-light p-5 text-center">
     <div class="container">
       <h2 class="text-lightblue my-2">RECENT WORK</h2>
       <h1 class="text-yellow">Photography Project</h1>
 
-      <!-- Photography Project Nav tabs -->
+      <!-- 5.1.1 Photography Project Nav tabs -->
       <ul class="nav nav-tabs justify-content-center my-5" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="family" aria-selected="true">Family</button>
@@ -182,11 +226,13 @@
 
       <div class="container">
         
-        <!-- Tab panes -->
+        <!-- 5.1.2 Photography Tab panes -->
         <div class="tab-content d-flex justify-content-center">
-          <!-- Family -->
+          
+          <!-- 5.1.2.1 Family Tab-->
           <div class="tab-pane active" id="family" role="tabpanel" aria-labelledby="family-tab">
-            <!-- Family carousel -->
+            
+            <!-- 5.1.2.1.1 Family carousel -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -219,10 +265,11 @@
             </div>
             
           </div>
-  
+          
+          <!-- 5.1.2.2 Couple Tab -->
           <div class="tab-pane" id="couple" role="tabpanel" aria-labelledby="couple-tab">
 
-            <!-- Couple carousel -->
+            <!-- 5.1.2.2.1 Couple carousel -->
             <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -251,8 +298,10 @@
             </div>
           </div>
   
+          <!-- 5.1.2.3 Portrait Tab -->
           <div class="tab-pane" id="portrait" role="tabpanel" aria-labelledby="portrait-tab">
-            <!-- Portrait carousel -->
+
+            <!-- 5.1.2.3.1 Portrait carousel -->
             <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -285,9 +334,10 @@
             </div>
           </div>
   
+          <!-- 5.1.2.4 Automobile Tab -->
           <div class="tab-pane" id="automobile" role="tabpanel" aria-labelledby="automobile-tab">
             
-            <!-- Automobile carousel -->
+            <!-- 5.1.2.4.1 Automobile carousel -->
             <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -337,7 +387,7 @@
       <h2 class="text-lightblue my-2">RECENT WORK</h2>
       <h1 class="text-yellow">Videography Project</h1>
 
-      <!-- Videography Project Nav tabs -->
+      <!-- 5.3.1 Videography Project Nav tabs -->
       <ul class="nav nav-tabs justify-content-center mt-5 " id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="film-tab" data-bs-toggle="tab" data-bs-target="#film" type="button" role="tab" aria-controls="film" aria-selected="true">Filmography</button>
@@ -347,32 +397,84 @@
         </li>
       </ul>
 
-      <!-- Tab panes -->
+      <!-- 5.3.2 Videography Tab panes -->
       <div class="tab-content">
         <div class="tab-pane active" id="film" role="tabpanel" aria-labelledby="film-tab">
           Filmography
         </div>
-
         <div class="tab-pane" id="ads" role="tabpanel" aria-labelledby="ads-tab">
           Advertisement
         </div>
-
       </div>
       
     </div>
   </section>
 
-  <!-- 6. Footer Section -->
-  <section  class="bg-dark text-light p-5 text-center">
-    <div class="container">
-      <h2 class="text-lightblue my-2">CONTACT US</h2>
-      
+  <!-- 6. FOOTER SECTION -->
+  <footer class="bg-dark py-4 flex-shrink-0">
+    <div class="container text-center">
+        <div class="row gy-4 gx-5">
+
+          <!-- 6.1 Halmi Outro -->
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <h5 class="h1 text-white">Halmi Arts</h5>
+            <p class="small text-muted">We make you see your true self</p>
+            <ul class="social mb-0 list-inline mt-3">
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="social-link"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- 6.2 Quick links -->
+          <div class="col-xl-3 col-lg-2 col-md-6">
+              <h4 class="text-white mb-3">Quick links</h4>
+              <ul class="list-unstyled text-muted">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./portfolio.html">Portfolio</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- 6.3 Contacts -->
+          <div class="col-xl-3 col-lg-2 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <ul class="list-unstyled text-muted">
+              <li>+254 110036179</li>
+              <li>+254 777361033</li>
+              <li>halmiarts@gmail.com</li>
+            </ul>
+          </div>
+
+          <!-- 6.4 Newsletter -->
+          <div class="col-xl-3 col-lg-2 col-md-6">
+            <h4 class="text-white mb-3">Subscribe To Newsletter</h4>
+            <p class="small text-muted">Get notified on our recent events.</p>
+            <div class="d-flex justify-content-center">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Enter Email" id="floatingTextarea" style="width:250px;"></textarea>
+                <label for="floatingTextarea">Enter Email</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary btn-lg mt-3">Subscribe</button>
+            
+          </div>
+          
+        </div>
     </div>
-  </section>
+
+    <!-- 6.5 Copyright  -->
+    <div class="container mt-4">
+      <p class="text-center small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Halmi Arts</a></p>
+    </div>
+    
+  </footer>
 
   <!-- 7. To top button -->
   
-  <!-- 7. Bootsrap Java Assests -->
+  <!-- 0.2. Bootsrap Java Assests -->
   <!-- <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
