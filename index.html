@@ -65,7 +65,7 @@
   
   <!-- 1. NAVIGATION BAR -->
   <header>
-    <nav class="bg-transparent navbar fixed-top navbar-expand-xxxl  navbar-dark py-4">
+    <nav class="bg-dark navbar fixed-top navbar-expand-xxxl  navbar-dark py-4">
       <div class="container">
 
         <!-- 1.1 Navigation Header & Menu -->
@@ -104,8 +104,8 @@
   <!-- style="background-image:url(./assets/index-image/robi.png); height: 400px;" -->
   <section  class="bg-dark hero-section text-light p-5 text-center">
     <div class="container">
-      <h1 class="text-yellow my-5">HALMI ARTS ENTERTAINMENT</h1>
-      <h3>We make you see your true self</h3>
+      <h1 class="text-yellow display-2 my-5">HALMI ARTS ENTERTAINMENT</h1>
+      <h2 class="display-6">We make you see your true self</h2>
       <button class="btn btn-lightblue btn-lg my-5">Explore</button>
     </div>
   </section>
@@ -115,17 +115,17 @@
     <div class="container">
       <h2 class="text-lightblue my-2">HELLO THERE</h2>
       <h1 class="display-4 text-yellow my-3 ">We Are Halmi Arts</h1>
-      <p class="fs-1">
+      <p class="fs-1 mb-3">
         We are a creative group of people who embark on designing influential brands and digital experiences for you.
       </p>
       <div class="container my-5">
         <div class="row text-center d-lg-flex">
-          <div class="col">
+          <div class="col-xxl-6">
             <img src="./assets/index-image/undraw_project_completed_re_jr7u.svg" alt="" class="img-thumbnail">
             <h1 class="text-lightgreen">109</h1>
             <h1 class="text-lightgreen">Projects Completed</h1>
           </div>
-          <div class="col">
+          <div class="col-xxl-6">
             <img src="./assets/index-image/undraw_happy_announcement_re_tsm0.svg"class="img-thumbnail" alt="">
             <h1 class="text-orange">109</h1>
             <h1 class="text-orange">Happy Clients</h1>
@@ -139,13 +139,13 @@
   <section  class="bg-altlight text-light p-5 text-center">
     <div class="container">
       <h2 class=" text-lightblue my-2">WHAT WE OFFER</h2>
-      <h1 class="display-1 text-yellow ">We’ve got everything you need to launch and grow your creativity.</h1>
+      <h1 class="display-4 text-yellow mb-5">We’ve got everything you need to launch and grow your creativity.</h1>
       
       <!-- 4.1 Offer Cards -->
-      <div class="row my-5 align-items-center justify-content-center">
+      <div class="row justify-content-center">
 
         <!-- 4.1.1 Photography Card -->
-        <div class="col-xxl-3 col-lg-8 m-4">
+        <div class="col-xxl-3 col-lg-5 col-sm-6 mb-5">
           <div class="card">
             <div class="bg-cardbg card border-0">
               <div class="card-body py-5 text-center">
@@ -158,7 +158,7 @@
         </div>
 
         <!-- 4.1.2 Videography Card -->
-        <div class="col-xxl-3 col-lg-8 m-4">
+        <div class="col-xxl-3 col-lg-5 col-sm-6 mb-5">
           <div class="card">
             <div class="bg-cardbg card border-0">
               <div class="card-body py-5 text-center">
@@ -171,12 +171,12 @@
         </div>
       
         <!-- 4.1.3 Sound Card -->
-        <div class="col-xxl-3 col-lg-8 m-4">
+        <div class="col-xxl-3 col-lg-5 col-sm-6 mb-5">
           <div class="card">
             <div class="bg-cardbg card border-0">
               <div class="card-body py-5 text-center">
                 <h4 class="card-title text-dark">Sound</h4>
-                <img src="./assets/index-image/arcticons_photo-pro.svg" alt="" sizes="250px" srcset="">
+                <img src="./assets/index-image/fxemoji_speaker3soundwaves.svg" alt="" sizes="250px" srcset="">
                 <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sint amet nobis quibusdam vitae provident, sunt doloribus.</p>
               </div>
             </div>
@@ -184,12 +184,12 @@
         </div>
 
         <!-- 4.1.4 Web Design Card -->
-        <div class="col-xxl-3 col-lg-8 m-4">
+        <div class="col-xxl-3 col-lg-5 col-sm-6 mb-5">
           <div class="card">
             <div class="bg-cardbg card border-0">
               <div class="card-body py-5 text-center">
                 <h4 class="card-title text-dark">Web Design</h4>
-                <img src="./assets/index-image/arcticons_photo-pro.svg" alt="" sizes="250px" srcset="">
+                <img src="./assets/index-image/mdi_web.svg" alt="" sizes="250px" srcset="">
                 <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sint amet nobis quibusdam vitae provident, sunt doloribus.</p>
               </div>
             </div>
@@ -400,7 +400,27 @@
       <!-- 5.3.2 Videography Tab panes -->
       <div class="tab-content">
         <div class="tab-pane active" id="film" role="tabpanel" aria-labelledby="film-tab">
-          Filmography
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary filmModal-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/watch?v=xfx1e3A0HtY"  data-bs-target="#filmModal">
+            <img src="/assets/index-image/Auto.jpg" alt="" class="img-thumbnail">
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="filmModal" tabindex="-1" aria-labelledby="filmModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="filmModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="" id="video" width="auto" height="auto" allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
         <div class="tab-pane" id="ads" role="tabpanel" aria-labelledby="ads-tab">
           Advertisement
@@ -471,7 +491,7 @@
     </div>
     
   </footer>
-
+  
   <!-- 7. To top button -->
   
   <!-- 0.2. Bootsrap Java Assests -->
@@ -479,5 +499,8 @@
   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
