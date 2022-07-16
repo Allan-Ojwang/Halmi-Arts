@@ -32,22 +32,36 @@
   #family,#couple,#portrait,#automobile{
     width: 100%;
   }
+  
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  
+  #video{
+    width: 400px;
+    height: 400px;
+  }
  }
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  
+  #video{
+    width: 720px;
+    height: 480px;
+  }
  }
 
 /*  X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   #family,#couple,#portrait,#automobile{
     width: 50%;
+  }
+  #video{
+    width: 1080px;
+    height: 650px;
+  }
+  .filmModal-btn{
+    width: 650px;
   }
  }
 
