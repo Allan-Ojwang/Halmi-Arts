@@ -8,13 +8,17 @@ $thumbnail-bg:$trans;
 $thumbnail-border-color:$trans;
 
 $custom-theme-colors: (
-  "altdark":#271C19,
-  "altlight":#2C221F,
-  "cardbg":#55423D,
+  // "altdark":#271C19,
+  // "altlight":#2C221F,
+  "altdark":#000000,
+  "altlight":#1B1B1B,
+  // "cardbg":#55423D,
+  "cardbg":#000000,
   "yellow":#F8E645,
   "lightblue":#00EDB4,
   "lightgreen":#00ED42,
   "orange":#FF8906,
+  "purple":#9747FF,
   "transparent":$trans
   );
 // merge the maps of the themes

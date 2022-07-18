@@ -6,7 +6,9 @@
   background-size: contain;
   height: 700px;
 } */
-
+body{
+  overflow-x: hidden;
+}
 .social-link {
   width: 30px;
   height: 30px;
@@ -26,6 +28,7 @@
   text-decoration: none;
   color: #555;
 }
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
